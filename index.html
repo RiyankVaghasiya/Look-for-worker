@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/media-queries.css" />
+  </head>
+  <body>
+    <!-- top-banner -->
+    <div class="top-banner">
+      <div class="container top-banner-container">
+        <div class="small-bold-text banner-text">
+          📣 Are you looking for the skill worker?
+        </div>
+      </div>
+    </div>
+    <!-- navbar -->
+    <nav>
+      <div class="container main-nav flex">
+        <a href="#" class="logo-image">
+          <img src="./assets/image/logo.png" alt="look for worker logo" />
+        </a>
+        <div class="nav-links" id="nav-links">
+          <ul class="flex">
+            <li>
+              <a href="worker-profile.html" class="hover-links"
+                >Worker profile
+              </a>
+            </li>
+            <li>
+              <a href="find-worker.html" class="hover-links">Find Worker</a>
+            </li>
+            <li><a href="support.html" class="hover-links"> Support</a></li>
+            <li><a href="admin.html" class="hover-links"> Admin </a></li>
+            <li>
+              <a href="login.html" class="hover-links secondary-btn">
+                Sign in
+              </a>
+            </li>
+            <li>
+              <a href="#register-scroll" class="hover-links primary-btn"
+                >Register
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a
+          href="#"
+          class="nav-toogle hover-links"
+          id="nav-toggle"
+          onclick="addclass()"
+        >
+          <img
+            src="./assets/image/bars-solid.svg"
+            alt="ham-icon"
+            height="20px"
+          />
+        </a>
+      </div>
+    </nav>
+    <!-- header -->
+    <header>
+      <div class="container header-section flex">
+        <div class="header-left">
+          <h1>
+            Looking for a
+            <p style="color: #ff9502; font-size: 3rem; margin-top: 10px">
+              worker <span style="color: #1f2937">?</span>
+            </p>
+          </h1>
+          <p style="margin-top: 25px">
+            In just a few mouse clicks, we bring you the best local craftsmen
+            who are perfect for your needs.
+          </p>
+          <div class="logo-panel flex">
+            <div class="logo-box flex">
+              <div class="logo-layer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  class="first"
+                  fill="orange"
+                  viewBox="0 0 448 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"
+                  />
+                </svg>
+              </div>
+              <div class="small-bold-text logo-desc">Easy and fast service</div>
+            </div>
+            <div class="logo-box flex">
+              <div class="logo-layer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  fill="orange"
+                  class="first"
+                  viewBox="0 0 576 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M256 32c-17.7 0-32 14.3-32 32v2.3 99.6c0 5.6-4.5 10.1-10.1 10.1c-3.6 0-7-1.9-8.8-5.1L157.1 87C83 123.5 32 199.8 32 288v64H544l0-66.4c-.9-87.2-51.7-162.4-125.1-198.6l-48 83.9c-1.8 3.2-5.2 5.1-8.8 5.1c-5.6 0-10.1-4.5-10.1-10.1V66.3 64c0-17.7-14.3-32-32-32H256zM16.6 384C7.4 384 0 391.4 0 400.6c0 4.7 2 9.2 5.8 11.9C27.5 428.4 111.8 480 288 480s260.5-51.6 282.2-67.5c3.8-2.8 5.8-7.2 5.8-11.9c0-9.2-7.4-16.6-16.6-16.6H16.6z"
+                  />
+                </svg>
+              </div>
+              <div class="small-bold-text logo-desc">
+                Over 100 skilled craftsmen
+              </div>
+            </div>
+            <div class="logo-box flex">
+              <div class="logo-layer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  fill="orange"
+                  class="first"
+                  viewBox="0 0 576 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M565.6 36.2C572.1 40.7 576 48.1 576 56V392c0 10-6.2 18.9-15.5 22.4l-168 64c-5.2 2-10.9 2.1-16.1 .3L192.5 417.5l-160 61c-7.4 2.8-15.7 1.8-22.2-2.7S0 463.9 0 456V120c0-10 6.1-18.9 15.5-22.4l168-64c5.2-2 10.9-2.1 16.1-.3L383.5 94.5l160-61c7.4-2.8 15.7-1.8 22.2 2.7zM48 136.5V421.2l120-45.7V90.8L48 136.5zM360 422.7V137.3l-144-48V374.7l144 48zm48-1.5l120-45.7V90.8L408 136.5V421.2z"
+                  />
+                </svg>
+              </div>
+              <div class="small-bold-text logo-desc">
+                Find worker nearby your area
+              </div>
+            </div>
+          </div>
+          <!-- <a href="#" class="primary-btn get-started-btn">Get started</a> -->
+        </div>
+        <div class="header-right">
+          <img src="./assets/image/workman.jpg" alt="worker image" />
+        </div>
+      </div>
+    </header>
+    <hr style="opacity: 0.5" />
+
+    <!-- category section -->
+    <section class="category-section">
+      <div class="container">
+        <div class="category-header">
+          <h2>choose your category</h2>
+        </div>
+        <div class="category-box flex">
+          <div class="c-box">
+            <img
+              src="./assets/image/cleaner.png"
+              alt=""
+              class="category-image"
+            />
+
+            <div class="small-bold-text">Cleaning & car washing services</div>
+          </div>
+          <div class="c-box">
+            <img
+              src="./assets/image/outdoor.png"
+              alt=""
+              class="category-image"
+            />
+
+            <div class="small-bold-text">Outdoor landscaping and gardening</div>
+          </div>
+          <div class="c-box">
+            <img
+              src="./assets/image/electricity.png"
+              alt=""
+              class="category-image"
+            />
+
+            <div class="small-bold-text">
+              Electricity, Home Automation & Security
+            </div>
+          </div>
+          <div class="c-box">
+            <img
+              src="./assets/image/interior-services.png"
+              alt=""
+              class="category-image"
+            />
+
+            <div class="small-bold-text">
+              Interior design, Flooring & Interior painting
+            </div>
+          </div>
+          <div class="c-box">
+            <img
+              src="./assets/image/construction-renovation.png"
+              alt=""
+              class="category-image"
+            />
+
+            <div class="small-bold-text">Construction & Renovation</div>
+          </div>
+          <div class="c-box">
+            <img
+              src="./assets/image/ac-services.png"
+              alt=""
+              class="category-image"
+            />
+
+            <div class="small-bold-text">Air Conditioning & Ventilation</div>
+          </div>
+          <div class="c-box">
+            <img src="./assets/image/doors.png" alt="" class="category-image" />
+
+            <div class="small-bold-text">Doors & Windows service</div>
+          </div>
+          <div class="c-box">
+            <img
+              src="./assets/image/roofing.png"
+              alt=""
+              class="category-image"
+            />
+
+            <div class="small-bold-text">Roofing & Exterior painting</div>
+          </div>
+          <div class="c-box">
+            <img
+              src="./assets/image/kitchen.png"
+              alt=""
+              class="category-image"
+            />
+
+            <div class="small-bold-text">Kitchen & Bathroom</div>
+          </div>
+          <div class="c-box">
+            <img
+              src="./assets/image/carpentry.png"
+              alt=""
+              class="category-image"
+            />
+
+            <div class="small-bold-text">Carpentry</div>
+          </div>
+          <div class="c-box">
+            <img
+              src="./assets/image/automobiles.png"
+              alt=""
+              class="category-image"
+            />
+
+            <div class="small-bold-text">Automobiles</div>
+          </div>
+          <div class="c-box">
+            <img
+              src="./assets/image/other-services.png"
+              alt=""
+              class="category-image"
+            />
+
+            <div class="small-bold-text">Other services</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr style="opacity: 0.5" />
+
+    <!-- register section -->
+    <section class="register-section" id="register-scroll">
+      <div class="container">
+        <div class="register-header">
+          <h2 style="color: #ff9502">Register your profile here</h2>
+        </div>
+        <div class="register-form">
+          <div class="first-row flex">
+            <div class="category first-row-common">
+              <div class="small-bold-text size">Category</div>
+              <input type="text" class="category-select-box" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1rem"
+                fill="grey"
+                class="down-caret"
+                viewBox="0 0 448 512"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                />
+              </svg>
+            </div>
+            <div class="category Sub-category first-row-common">
+              <div class="small-bold-text size">Sub-category</div>
+              <input type="text" class="category-select-box" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1rem"
+                fill="grey"
+                class="down-caret"
+                viewBox="0 0 448 512"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                />
+              </svg>
+            </div>
+            <div class="desired-period first-row-common">
+              <div class="small-bold-text size">Desired period</div>
+              <input type="text" class="period-select" placeholder="In hours" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1rem"
+                fill="grey"
+                class="down-caret absolute"
+                viewBox="0 0 448 512"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                />
+              </svg>
+            </div>
+            <div class="pay-rate first-row-common">
+              <div class="small-bold-text size">Hourly pay</div>
+              <input
+                type="text"
+                class="pay-select-box"
+                placeholder="'x' Rupees/hour"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                fill="grey"
+                class="absolute-pay"
+                viewBox="0 0 320 512"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M0 64C0 46.3 14.3 32 32 32H96h16H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H231.8c9.6 14.4 16.7 30.6 20.7 48H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H252.4c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256h80c32.8 0 61-19.7 73.3-48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H185.3C173 115.7 144.8 96 112 96H96 32C14.3 96 0 81.7 0 64z"
+                />
+              </svg>
+            </div>
+          </div>
+          <hr style="opacity: 0.5" />
+          <div class="second-row flex">
+            <div class="other-details second-row-common">
+              <div class="small-bold-text size">Details about your work</div>
+              <textarea
+                name=""
+                id="desc"
+                cols="30"
+                rows="10"
+                class="category-select-box"
+                placeholder="More information about your work... "
+              ></textarea>
+            </div>
+            <div class="other-details second-row-common">
+              <div class="small-bold-text size">Images and documents</div>
+              <textarea
+                name=""
+                id="desc"
+                cols="30"
+                rows="10"
+                class="category-select-box"
+              ></textarea>
+            </div>
+          </div>
+          <hr style="opacity: 0.5" />
+          <div class="third-row flex">
+            <div class="firstname">
+              <div class="small-bold-text size">First name</div>
+              <input
+                type="text"
+                class="third-row-select-box"
+                placeholder="shailesh"
+              />
+            </div>
+            <div class="lastname">
+              <div class="small-bold-text size">Last name</div>
+              <input
+                type="text"
+                class="third-row-select-box"
+                placeholder="patel"
+              />
+            </div>
+            <div class="phone">
+              <div class="small-bold-text size">Phone</div>
+              <input
+                type="text"
+                class="third-row-select-box"
+                placeholder="9265353224"
+              />
+            </div>
+            <div class="email">
+              <div class="small-bold-text size">E-mail</div>
+              <input
+                type="text"
+                class="third-row-select-box"
+                placeholder="xyz@gmail.com"
+              />
+            </div>
+            <div class="postal-code">
+              <div class="small-bold-text size">Postal code</div>
+              <input
+                type="text"
+                class="category-select-box"
+                placeholder="1234"
+              />
+            </div>
+            <div class="city" style="position: relative">
+              <div class="small-bold-text size">City</div>
+              <input type="text" class="category-select-box" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1rem"
+                fill="grey"
+                class="down-caret"
+                viewBox="0 0 448 512"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                />
+              </svg>
+            </div>
+            <div class="address">
+              <div class="small-bold-text size">Your address</div>
+              <input
+                type="text"
+                class="category-select-box"
+                placeholder="street , house-number"
+              />
+            </div>
+          </div>
+          <div class="terms flex">
+            <div class="left-part terms flex">
+              <input type="checkbox" name="terms" id="terms" />
+              <div class="small-bold-text">
+                <label for="terms" style="cursor: pointer"
+                  >I accept terms and conditions of look for worker</label
+                >
+              </div>
+            </div>
+            <a href="#" class="primary-btn">Validate my request</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cta section -->
+    <!-- <section class="cta-section">
+      <div class="container">
+        <div class="cta-info flex">
+          <h2>Start testing today</h2>
+          <p>Take the guesswork out of design decisions</p>
+        </div>
+      </div>
+    </section> -->
+    <!-- footer section -->
+    <!-- <footer class="footer-section">
+      <div class="container">
+        <div class="footer-container flex">
+          <div class="footer-logo logo-image">
+            <img src="./assets/image/asset 1.png" alt="company logo" />
+          </div>
+          <div class="products flex">
+            <h5>Product</h5>
+            <a href="#" class="hover-links">Overview</a>
+            <a href="#" class="hover-links">Pricing</a>
+            <a href="#" class="hover-links">UsabilityHub Panel</a>
+            <a href="#" class="hover-links">Customers</a>
+            <a href="#" class="hover-links">Status page</a>
+          </div>
+          <div class="methodologies flex">
+            <h5>Methodology</h5>
+            <a href="#" class="hover-links">Card sorting</a>
+            <a href="#" class="hover-links">Prototype tests</a>
+            <a href="#" class="hover-links">First click tests</a>
+            <a href="#" class="hover-links">Design surveys</a>
+            <a href="#" class="hover-links">Preference tests</a>
+            <a href="#" class="hover-links">Five second tests</a>
+          </div>
+          <div class="resources flex">
+            <h5>Resources</h5>
+            <a href="#" class="hover-links">Blog</a>
+            <a href="#" class="hover-links">Examples</a>
+            <a href="#" class="hover-links">Testing guides</a>
+            <a href="#" class="hover-links">Help center</a>
+            <a href="#" class="hover-links">Contact</a>
+            <a href="#" class="hover-links">Careers</a>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+    <!-- subfooter -->
+    <div class="subfooter">
+      <div class="container">
+        <div class="subfooter-container flex">
+          <a href="#" class="hover-links">Privacy policy</a>
+          <a href="#" class="hover-links">Terms & conditions</a>
+          <a href="#" class="hover-links">Security information</a>
+          <a href="#" class="hover-links">
+            <img src="./assets/image/asset 28.png" alt="facbook logo" />
+          </a>
+          <a href="#" class="hover-links">
+            <img src="./assets/image/asset 29.png" alt="skype logo" />
+          </a>
+          <a href="#" class="hover-links">
+            <img src="./assets/image/asset 30.png" alt="linked-in logo"
+          /></a>
+          <a href="#" class="hover-links">
+            <img src="./assets/image/asset 31.png" alt="youtube logo"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const navlinks = document.getElementById("nav-links");
+      const navtoggle = document.getElementById("nav-toggle");
+
+      function addclass() {
+        navlinks.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

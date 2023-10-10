@@ -1,0 +1,105 @@
+/* media queries */
+@media screen and (max-width:991px){
+h3{
+    font-size: 1.3rem;
+}
+.nav-links{
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    padding-block: 20px;
+    transition: 0.3s ease-in-out;
+}
+.nav-links.active{
+    left: 0;
+}
+.nav-toogle{
+    display: block;
+    position: absolute;
+    right: 20px;
+ }
+ .example-banner{
+    gap: 20px;
+ }
+.example-card{
+  width: calc(50% - 10px);
+  height: 180px;
+}
+.cta-section{
+    padding: 50px var(--padding-inline-section) 50px;
+}
+.nav-links ul{
+    flex-direction: column;
+    
+}
+.main-nav{
+    position: relative;
+    overflow: initial;
+}
+}
+
+
+
+@media screen and (max-width:767px){
+.primary-btn{
+    width: 100%;
+}
+
+.header-section{
+    flex-direction: column-reverse;
+}
+.header-left{
+    max-width: 100vw;
+    text-align: center;
+}
+.f-box{
+    min-width: calc(50% - 10px);
+}
+.common{
+    flex-direction: column;
+}
+.footer-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.products{
+    align-items: stretch;
+    text-align: center;
+}
+.methodologies{
+    align-items: stretch;
+    text-align: center;
+}
+.resources{
+    align-items: stretch;
+    text-align: center;
+}
+}
+
+@media screen and (max-width:479px){
+    :root{
+        --padding-inline-section: 10px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 20px;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .f-box{
+        min-width: 100%;
+    }
+    .example-card{
+        width: 100%;
+    }
+   
+}
