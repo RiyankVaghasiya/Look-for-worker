@@ -73,8 +73,19 @@
                 <input
                   type="password"
                   placeholder="Password"
-                  id="profile-email"
+                  id="password"
+                  name="password"
                 />
+                <a href="#">
+                  <img
+                    id="open"
+                    src="./assets/image/open-eye.png"
+                    alt="open-eye"
+                  />
+                </a>
+                <!-- <a href="#">
+                  <img src="./assets/image/close-eye.png" alt="closeeye" />
+                </a> -->
               </form>
               <a class="forgot-pass" href="#">Forgot password?</a>
               <a href="#" class="primary-btn login-btn">Login</a>
@@ -105,5 +116,20 @@
         </div>
       </div>
     </div>
+
+    <script>
+      let openeye = document.getElementById("open");
+      let password = document.getElementById("password");
+
+      openeye.onclick = function () {
+        if (password.type == "password") {
+          password.type = "text";
+          openeye.src = "./assets/image/close-eye.png";
+        } else {
+          password.type = "password";
+          openeye.src = "./assets/image/open-eye.png";
+        }
+      };
+    </script>
   </body>
 </html>

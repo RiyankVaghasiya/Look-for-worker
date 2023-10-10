@@ -556,6 +556,14 @@ height: 15px;
     width: 100%;
     font-size: 16px;
 }
+#password{
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 10px 0;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
 .profile-right{
     width: 41.66%;
     padding: 45px 23px 40px 35px;
@@ -564,6 +572,7 @@ height: 15px;
     flex-direction: column;
     gap: 37px;
     align-items: baseline;
+    position: relative;
 }
 .forgot-pass{
         color: #ff9502;
@@ -578,4 +587,11 @@ height: 15px;
     padding: 15px 0;
     border-radius: 0;
     margin-top: 30px;
+}
+
+#open {
+    position: absolute;
+    top: 161px;
+    right: 20px;
+    cursor: pointer;
 }
