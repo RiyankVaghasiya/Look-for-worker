@@ -609,6 +609,7 @@ height: 15px;
     border-radius: 8px 0 0 8px;
     border: 1px solid gray;
     width: 100%;
+    letter-spacing: 0.8px;
   }
   .search-btn{
     padding: 18px 0;
