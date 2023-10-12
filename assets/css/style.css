@@ -10,6 +10,7 @@ font-family: 'Roboto', sans-serif; */
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 :root{
     --primary-text-color:#183b56;
@@ -112,6 +113,9 @@ transition: 0.2s ease-out;
 
 
 /* navbar css */
+.navbar{
+    padding-block: 10px;
+}
 .hover-links{
     color: var(--primary-text-color);
 }
@@ -124,7 +128,7 @@ transition: 0.2s ease-out;
     justify-content: space-between;
 }
 .logo-image img{
-    width: 285px;
+    width: 250px;
 }
 
 .nav-links ul{
@@ -537,9 +541,84 @@ height: 15px;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     z-index: 2;
     cursor: pointer;
   
   }
  
+
+  /* find worker page css */
+  .banner-image img{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+  .banner-image{
+    position: relative;
+  }
+  .worker-filter{
+    max-width: 1180px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 35px 8px rgba(0,0,0,0.1);
+    position: relative;
+    margin-top: -60px;
+  }
+  .worker-banner-text{
+    position: absolute;
+    text-align: center;
+    top: 28%;
+    left: 35%;
+  }
+  .worker-width{
+    width: 1330px;
+  }
+  .filter-left{
+    width: 25%;
+    
+  }
+  .filter-right{
+    width: 75%;
+    padding-inline: 15px;
+  }
+  .filter-left ul{
+    flex-direction: column;
+    align-items: baseline;
+    border-right: 1px solid rgb(229, 231, 235);
+  }
+  .filter-left ul li {
+    border-bottom: 1px solid rgb(229, 231, 235);
+    width: 100%;
+    outline: none;
+    padding: 12px 12px 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #374151;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #search-input{
+    padding: 0 0 0 25px;
+    height: 4rem;
+    outline: none;
+    color: #5c5c68;
+    font-size: 15px;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid gray;
+    width: 100%;
+  }
+  .search-btn{
+    padding: 18px 0;
+    text-align: center;
+    height: 4rem;
+    border-radius: 0 8px 8px 0;
+    width: 18%;
+    outline: none;
+    font-size: 18px;
+  }
+  .search-input{
+    margin-top: -60px;
+  }

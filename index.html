@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/media-queries.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
-  <body>
+  <body class="body">
     <div class="wrap">
       <!-- top-banner -->
       <div class="top-banner">
@@ -20,7 +20,7 @@
         </div>
       </div>
       <!-- navbar -->
-      <nav>
+      <nav class="navbar">
         <div class="container main-nav flex">
           <a href="#" class="logo-image">
             <img src="./assets/image/logo.png" alt="look for worker logo" />
@@ -608,6 +608,7 @@
         $("#overlay").fadeIn("slow");
         (function fun() {
           $(".login-container").css({ top: "10%" });
+          $(".body").css({ overflow: "hidden" });
         })();
       }
 
@@ -615,6 +616,7 @@
         $("#overlay").fadeOut("slow");
         (function fun2() {
           $(".login-container").css({ top: "-100%" });
+          $(".body").css({ overflow: "auto" });
         })();
       }
 
