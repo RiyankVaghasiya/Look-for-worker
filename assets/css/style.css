@@ -544,8 +544,32 @@ height: 15px;
     background-color: rgba(0,0,0,0.7);
     z-index: 2;
     cursor: pointer;
-  
   }
+  .new-account{
+    width: 100%;
+    text-align: end;
+    margin-top: -10px;
+  }
+.new-account a{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ff9502;
+}
+.new-account-container{
+    background: white;
+    max-width: 480px;
+    margin: auto;
+    padding: 20px 20px;
+    border-radius: 13px;
+    position: absolute; 
+    top: -150%;
+    left: 35vw; 
+    z-index: 9999;
+    transition: all 0.7s ease-in-out;
+}
+.active{
+    top: 2%;
+}
  
 
   /* find worker page css */

@@ -37,7 +37,7 @@
               </li>
               <li><a href="support.html" class="hover-links"> Support</a></li>
               <li>
-                <a href="./admin/index3.html" class="hover-links"> Admin </a>
+                <a href="./admin/admin.html" class="hover-links"> Admin </a>
               </li>
               <li>
                 <a href="#" class="hover-links secondary-btn signin-btn">
@@ -145,6 +145,7 @@
           </div>
         </div>
       </header>
+      <!-- login container -->
       <div id="overlay" class="model">
         <div class="login-container" id="login-box" style="margin-block: 100px">
           <div class="close-div">
@@ -187,10 +188,94 @@
                 placeholder="Enter password"
               />
             </div>
+            <div class="new-account">
+              <a href="#" id="create-new-account">Create a new account?</a>
+            </div>
 
             <div class="small-bold-text flex conditions" style="gap: 10px">
               <input type="checkbox" name="conditions" id="conditions" />
               <label for="conditions" style="cursor: pointer"
+                >I accept terms and conditions of look for worker</label
+              >
+            </div>
+            <a href="#" class="primary-btn login-btn" style="margin-top: 15px"
+              >Proceed</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- new account section -->
+      <div id="new-account-overlay" class="model">
+        <div
+          class="new-account-container"
+          id="new-account-box"
+          style="margin-block: 100px"
+        >
+          <div class="close-div">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="2rem"
+              id="close"
+              fill="white"
+              style="
+                border: 1px solid black;
+                background-color: black;
+                border-radius: 100%;
+                outline: none;
+              "
+              class="close-btn"
+              viewBox="0 0 512 512"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+              />
+            </svg>
+          </div>
+          <div class="login-info flex">
+            <h6>Register</h6>
+            <div class="small-bold-text size red">
+              Note:- *this is for customer only
+            </div>
+            <div class="login-form flex">
+              <input
+                type="text"
+                class="account-fname login-email"
+                placeholder="Firstname"
+              />
+              <input
+                type="text"
+                class="account-lname login-email"
+                placeholder="Lastname"
+              />
+              <input
+                type="text"
+                class="login-email login-email"
+                placeholder="Enter email address"
+              />
+              <input
+                type="password"
+                class="login-email"
+                name="pass"
+                id="pass"
+                placeholder="Create password"
+              />
+              <input
+                type="password"
+                class="login-email"
+                name="pass"
+                id="pass"
+                placeholder="Confirm password"
+              />
+            </div>
+
+            <div class="small-bold-text flex conditions" style="gap: 10px">
+              <input
+                type="checkbox"
+                name="new-account-condition"
+                id="new-account-condition"
+              />
+              <label for="new-account-condition" style="cursor: pointer"
                 >I accept terms and conditions of look for worker</label
               >
             </div>
@@ -624,6 +709,20 @@
 
       $(document).on("click", function () {
         hideModal();
+      });
+
+      // register page js
+      $("#create-new-account").on("click", function () {
+        $(".new-account-container")
+          .addClass("active")
+          .siblings()
+          .removeClass("active");
+      });
+      $(".close-btn").on("click", function () {
+        $(".new-account-container").removeClass("active");
+      });
+      $(".new-account-container").click(function (event) {
+        event.stopPropagation();
       });
     </script>
   </body>
