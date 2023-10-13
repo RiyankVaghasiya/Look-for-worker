@@ -147,7 +147,7 @@
       </header>
       <!-- login container -->
       <div id="overlay" class="model">
-        <div class="login-container" id="login-box" style="margin-block: 100px">
+        <div class="login-container" id="login-box">
           <div class="close-div">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -206,11 +206,7 @@
       </div>
       <!-- new account section -->
       <div id="new-account-overlay" class="model">
-        <div
-          class="new-account-container"
-          id="new-account-box"
-          style="margin-block: 100px"
-        >
+        <div class="new-account-container" id="new-account-box">
           <div class="close-div">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -694,7 +690,7 @@
       function showModal() {
         $("#overlay").fadeIn("slow");
         (function fun() {
-          $(".login-container").css({ top: "10%" });
+          $(".login-container").css({ top: "20%" });
           $(".body").css({ overflow: "hidden" });
         })();
       }

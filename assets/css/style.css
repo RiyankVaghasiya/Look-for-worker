@@ -568,7 +568,7 @@ height: 15px;
     transition: all 0.7s ease-in-out;
 }
 .active{
-    top: 2%;
+    top: 12%;
 }
  
 
@@ -646,4 +646,19 @@ height: 15px;
   }
   .search-input{
     margin-top: -60px;
+  }
+
+  /* support page css */
+  .login-register-popup{
+    align-items: baseline;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .support{
+    background-color: #fff;
+    box-shadow: 0 0 35px 8px rgba(0,0,0,0.2);
+    display: block;
+    padding: 50px 20px;
+    position: unset;
+    margin: 35px auto;
   }
